@@ -1,6 +1,4 @@
-const _ = require("lodash");
+const _ = require('lodash');
 
-const userInput = "Hello";
-const result = _.template("<%= value %>")({ value: userInput });
-
-console.log(result);
+const greet = _.template('Hello <%= name %>');
+console.log(greet({ name: 'Audit' }));
